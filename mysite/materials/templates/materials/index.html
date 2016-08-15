@@ -1,0 +1,17 @@
+<h1>Material List</h1>
+{% if customer_list %}
+    <table>
+    {% for customer in customer_list %}
+    <tr>
+    <td>{{ customer.field1 }}</td>
+    <td>{{ customer.field2 }}</td>
+    <td>{{ customer.field3 }}</td>
+    <td>{{ customer.field4 }}</td>
+    <td>{{ customer.field5 }}</td>
+    </tr>
+    {% endfor %}
+
+    </table>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
