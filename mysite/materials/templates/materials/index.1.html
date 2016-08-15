@@ -1,9 +1,0 @@
-<h1>Material List</h1>
-{% if customer_list %}
-    <ul>
-    {% for customer in customer_list %}
-  <li><a href="{% url 'materials:detail' customer.id %}">{{ customer.field1 }}</a></li>   {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
